@@ -1,0 +1,54 @@
+<html>
+    <body>
+        <h1>Sign in your account</h1>
+        <p>
+        <input type="text" placeholder="Email or phone" id="email">
+        </p>
+        <p>
+        <input type="password" placeholder="Password" id="password">
+        
+        </p>
+        <p>
+        <button onclick="th()" value="Sign in">Sign in</button>
+        </p>
+
+    </body>
+    
+    <script>
+        let email = 'ksm7529@gmail.com'
+        let password = '00000000'
+        let phone = '02059792299'
+        
+        function th() {
+            let emailInput = document.getElementById('email').value
+            let passwordInput = document.getElementById('password').value
+            if(email == emailInput){
+            console.log('email success')
+            
+            }
+            else{
+            console.log('none')
+            }
+            if(password == passwordInput){
+            console.log('password success')
+            
+            }
+            else{
+            console.log('none')
+            }
+        }
+    </script>
+    <style>
+        body {
+        width: 300px;
+        height: 200px;
+        background: red;
+        animation: mymove 5s infinite;
+        }
+
+        @keyframes mymove {
+        from {background-color: red;}
+        to {background-color: blue;}
+        }
+    </style>
+</html>
